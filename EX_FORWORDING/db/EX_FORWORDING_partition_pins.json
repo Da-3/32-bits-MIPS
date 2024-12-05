@@ -1,0 +1,113 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ForwardA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ForwardA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ForwardB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ForwardB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_RegisterRs[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MEM_WB_RegisterRd[4]",
+					"strict" : false
+				},
+				{
+					"name" : "EX_MEM_RegisterRd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_RegisterRs[0]",
+					"strict" : false
+				},
+				{
+					"name" : "EX_MEM_RegisterRd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_RegisterRs[1]",
+					"strict" : false
+				},
+				{
+					"name" : "EX_MEM_RegisterRd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_RegisterRs[2]",
+					"strict" : false
+				},
+				{
+					"name" : "EX_MEM_RegisterRd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_RegisterRs[3]",
+					"strict" : false
+				},
+				{
+					"name" : "EX_MEM_RegisterRd[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MEM_WB_RegWrite",
+					"strict" : false
+				},
+				{
+					"name" : "MEM_WB_RegisterRd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MEM_WB_RegisterRd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MEM_WB_RegisterRd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MEM_WB_RegisterRd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "EX_MEM_RegWrite",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_RegisterRt[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_RegisterRt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_RegisterRt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_RegisterRt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_RegisterRt[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

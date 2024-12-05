@@ -1,0 +1,30 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY IP_CACH_RAM IS 
+PORT (	 address : IN  STD_LOGIC_VECTOR (4 DOWNTO 0);
+             clock   : IN  STD_LOGIC ;
+             data    : IN  STD_LOGIC_VECTOR (31 DOWNTO 0);
+             wren    : IN  STD_LOGIC  := '1';
+             q       : OUT STD_LOGIC_VECTOR (31 DOWNTO 0));
+END IP_CACH_RAM;
+
+ARCHITECTURE arch OF IP_CACH_RAM IS
+   COMPONENT OnChip_ram32x32 
+      PORT ( address : IN  STD_LOGIC_VECTOR (4 DOWNTO 0);
+             clock   : IN  STD_LOGIC ;
+             data    : IN  STD_LOGIC_VECTOR (31 DOWNTO 0);
+             wren    : IN  STD_LOGIC  := '1';
+             q       : OUT STD_LOGIC_VECTOR (31 DOWNTO 0));
+   END COMPONENT;
+   SIGNAL Clock, Wren : STD_LOGIC;
+   SIGNAL Address : STD_LOGIC_VECTOR(4 DOWNTO 0); 
+   SIGNAL DataIn, DataOut : STD_LOGIC_VECTOR(31 DOWNTO 0); 
+BEGIN
+   Clock <= KEY(0);
+   Wren <= SW(9);
+   DataIn <= SW(3 DOWNTO 0);
+   Address <= SW(8 DOWNTO 4);
+
+   
+   U1: OnChip_ram32x4 PORT MAP (Address => address, Clock => Clock, Data => DataIn, Wren => wren, q => DataOut);

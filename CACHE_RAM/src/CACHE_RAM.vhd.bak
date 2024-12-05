@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity CACHE_RAM is
+	port(
+		pc,data_in: 	in 	std_logic_vector(31 downto 0);
+		ce,re,we:		in		std_logic;	
+		data_out:		out	std_logic_vector(31 downto 0)
+	);
+end entity;
+
+
+architecture rtl of CACHE_RAM is
+
+type mem_array is array((2**32)-1 downto 0) of 
+        std_logic_vector(31 downto 0);
+
+signal mem : mem_array;
+-- signal data : std_logic_vector(31 downto 0);
+
+
+begin
+
+-- ce : input_enable (chip select)
+-- re : read_enable
+-- we	: write_enable
+
+process(pc,data_in,ce,re,we) 
+    begin
+		if (ce = '1' and re = '1') then
+			 data_out <= mem(to_integer(unsigned(pc)));
+		elsif (ce = '1' and we = '1') then
+			 mem(to_integer(unsigned(pc))) <= data_in;
+		end if;
+    end process;
+
+end rtl; 

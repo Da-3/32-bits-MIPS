@@ -1,0 +1,18 @@
+# Compile of DIRECT_MAP_ARRAY_tb.vhd was successful.
+vsim -gui work.direct_map_array_tb
+# vsim -gui work.direct_map_array_tb 
+# Start time: 19:20:28 on Feb 05,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.direct_map_array_tb(tb_arch)
+# Loading work.direct_map_array(rtl)
+add wave -position insertpoint sim:/direct_map_array_tb/uut/*
+run 200us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /direct_map_array_tb/uut
+# ** Note: Test case 1:
+#    Time: 5 ns  Iteration: 0  Instance: /direct_map_array_tb
+# End time: 21:03:37 on Feb 05,2024, Elapsed time: 1:43:09
+# Errors: 0, Warnings: 3

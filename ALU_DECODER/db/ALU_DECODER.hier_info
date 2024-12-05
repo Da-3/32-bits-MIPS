@@ -1,0 +1,18 @@
+|ALU_DECODER
+ALUOP[0] => Equal0.IN1
+ALUOP[0] => Equal1.IN1
+ALUOP[0] => Equal2.IN0
+ALUOP[1] => Equal0.IN0
+ALUOP[1] => Equal1.IN0
+ALUOP[1] => Equal2.IN1
+FUNCT[0] => F[0]$latch.DATAIN
+FUNCT[1] => F[1]$latch.DATAIN
+FUNCT[2] => F[2]$latch.DATAIN
+FUNCT[3] => ~NO_FANOUT~
+FUNCT[4] => ~NO_FANOUT~
+FUNCT[5] => ~NO_FANOUT~
+F[0] <= F[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

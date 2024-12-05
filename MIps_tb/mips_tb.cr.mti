@@ -1,0 +1,44 @@
+C:/Users/LENOVO/Desktop/Nabil/cach_array/DIRECT_MAP_ARRAY_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/LENOVO/Desktop/Nabil/cach_array/DIRECT_MAP_ARRAY_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DIRECT_MAP_ARRAY_tb
+-- Compiling architecture tb_arch of DIRECT_MAP_ARRAY_tb
+
+} {} {}} C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/DIRECT_MAP_ARRAY/src/DIRECT_MAP_ARRAY.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/DIRECT_MAP_ARRAY/src/DIRECT_MAP_ARRAY.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DIRECT_MAP_ARRAY
+-- Compiling architecture rtl of DIRECT_MAP_ARRAY
+
+} {} {}} C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/IP_CACH_RAM.vhd {1 {vcom -work work -2008 -explicit -stats=none C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/IP_CACH_RAM.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity IP_CACH_RAM
+-- Compiling architecture arch of IP_CACH_RAM
+
+} {} {}} C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/MUX21/src/MUX21.vhd {1 {vcom -work work -2008 -explicit -stats=none C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/MUX21/src/MUX21.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX21
+-- Compiling architecture RTL of MUX21
+
+} {} {}} C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/ram_ip.vhd {1 {vcom -work work -2008 -explicit -stats=none C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/ram_ip.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity ram_ip
+-- Compiling architecture SYN of ram_ip
+
+} {} {}}

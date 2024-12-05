@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "F[0]",
+					"strict" : false
+				},
+				{
+					"name" : "F[1]",
+					"strict" : false
+				},
+				{
+					"name" : "F[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FUNCT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOP[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOP[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FUNCT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FUNCT[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

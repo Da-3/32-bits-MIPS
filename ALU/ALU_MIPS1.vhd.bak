@@ -1,0 +1,49 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity ALU_MIPS1 is 
+port ( A , B : in std_logic_vector(31 downto 0 );
+			f : in std_logic_vector(2 downto 0);
+			s : out std_logic_vector(31 downto 0);
+			z : out std_logic );
+end entity;
+
+architecture rtl of ALU_MIPS is 
+begin 
+process(A,B,f) is
+	begin
+		variable result : std_logic_vector(31 downto 0);
+		case (f) is
+      when "000" => 
+			result <= A and B ;
+		when "001" => 
+			result <= A or B ;
+		when "010" => 
+			result <= std_logic_vector (signed(A) + signed(B));
+		when "011" => 
+			result <= A xor B ;
+		when "101" => 
+			result <= not(B);
+		when "110" => 
+			result <= std_logic_vector (signed(A) - signed(B));
+		when "111" => 
+			result <= std_logic_vector (signed(A) - signed(B));
+			if signed(result) < 0 then
+				result <= std_logic_vector(1); -- set to 1
+			elsif 
+				result <= (others => '0'); -- set to 0
+			end if;
+		when others => 
+			result <= A nand B ;
+	end case ;
+	
+	-- SETTING ZERO SIGNAL --
+	if signed(result) = 0 then
+		Z <= 1;
+	elsif
+		Z <= 0;
+	end if;
+	
+	end process ;
+	end rtl ;
+	

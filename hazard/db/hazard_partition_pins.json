@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pc_write",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_write",
+					"strict" : false
+				},
+				{
+					"name" : "mu",
+					"strict" : false
+				},
+				{
+					"name" : "IF_Flash",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_Rt[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Rt[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_MemRead",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_Rt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Rs[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_Rt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Rs[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_Rt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Rs[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ID_EX_Rt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Rs[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Rs[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Rt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Rt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Rt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Rt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCSrc",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

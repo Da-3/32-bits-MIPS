@@ -1,0 +1,103 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/simulation/qsim
+El1_inst_cach
+Z1 w1706801532
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 3HQPc5MVbmOPN?>a5EBYj2
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 jZ]H46BQLgIP5mfRTO`3B1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ^Ch;U@;bMk1;>A2B<UV`k2
+!i122 24
+R0
+Z9 8L1_INST_CACH.vho
+Z10 FL1_INST_CACH.vho
+l0
+L37 1
+Vz9<_XRTc3;E6@=D[5A0QL1
+!s100 I?S39a]JPMDZmW^4gacTT2
+Z11 OV;C;2020.1;71
+32
+Z12 !s110 1706801532
+!i10b 1
+Z13 !s108 1706801532.000000
+Z14 !s90 -work|work|L1_INST_CACH.vho|
+Z15 !s107 L1_INST_CACH.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 12 l1_inst_cach 0 22 z9<_XRTc3;E6@=D[5A0QL1
+!i122 24
+l227
+L146 1234
+V0ITN>Z8>4N5^C1b2je?OV3
+!s100 1NQRaU`AN=[GE2j<d5TCS0
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+El1_inst_cach_vhd_vec_tst
+Z18 w1706801531
+R6
+R7
+!i122 25
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L32 1
+VJlE2GDiaK3e9G9XJ[ZkfM3
+!s100 H>b2UNgVg`4h`D^IBWA?h0
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Al1_inst_cach_arch
+R6
+R7
+Z23 DEx4 work 24 l1_inst_cach_vhd_vec_tst 0 22 JlE2GDiaK3e9G9XJ[ZkfM3
+!i122 25
+l49
+Z24 L34 580
+Z25 VCH<62emWj<eK?nnZG__em3
+Z26 !s100 5Z?N@d_3zc9?YigP4eZ0J1
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17

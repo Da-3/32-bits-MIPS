@@ -1,0 +1,61 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all ;
+entity L1_INST_CACH is 
+      port ( pc,datain :          in std_logic_vector (31 downto 0);
+		       ce,re,we:		in		std_logic;	
+             inst :        out std_logic_vector (31 downto 0));
+		end L1_INST_CACH ; 
+	
+architecture rtl of L1_INST_CACH is 
+ signal is_tag_equal, hit , valid_cach :               std_logic:=0;
+ signal inst_ram , inst_sig , inst_cach : std_logic_vector (31 downto 0);
+ signal tag_cach :                        std_logic_vector (27 downto 0);
+ 
+ component DIRECT_MAP_ARRAY is 
+	port (
+		hit : in std_logic;
+		data_in, pc : in std_logic_vector(31 downto 0);
+		data_out : out std_logic_vector(31 downto 0);
+		tag_out : out std_logic_vector(27 downto 0); 
+		valid_out: out std_logic 
+	);
+ end component ;
+ 
+ component CACHE_RAM is
+	port(
+		pc,data_in: 	in 	std_logic_vector(31 downto 0);
+		ce,re,we:		in		std_logic;	
+		data_out:		out	std_logic_vector(31 downto 0)
+	);
+ end component;
+ 
+ component MUX21 is
+	generic (N:integer:=32); 
+	port(A,B: in std_logic_vector(N-1 downto 0);
+		sel : in std_logic;
+		s   :out std_logic_vector(N-1 downto 0) );
+ end component;
+
+  begin 
+    direct_map : DIRECT_MAP_ARRAY 
+	        port map (hit,inst_sig,pc,inst_cach,tag_cach,valid_cach);
+	 mux : MUX21
+	   generic map (32)
+      port map (inst_ram,inst_cach,hit,inst_sig);
+	 cach_ram : CACHE_RAM 
+	   port map (pc,datain,ce,re,we,inst_ram);
+      		
+	 process(ce,re,we,pc)
+	  
+	  begin 
+	   if (tag_cach = pc(31 downto 4)) then 
+		  is_tag_equal <= '1' ;
+		end if ;
+		  hit <= is_tag_equal and valid_cach ;
+    end process ;
+	
+    	
+    inst <= inst_sig ; 
+
+end rtl ;	

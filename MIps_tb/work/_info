@@ -1,0 +1,395 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/LENOVO/Desktop/Nabil/VHDL_Course/VHDL_UDEMY/Project/UART/modelSim
+Ecache_ram
+Z0 w1706741529
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 17
+Z4 dC:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/MIps_tb
+Z5 8C:\Users\LENOVO\Desktop\Nabil\MIPS_VHDL\CACHE_RAM\src\CACHE_RAM.vhd
+Z6 FC:\Users\LENOVO\Desktop\Nabil\MIPS_VHDL\CACHE_RAM\src\CACHE_RAM.vhd
+l0
+L5 1
+VKWOhKzlfdARkSWN_b>0fL3
+!s100 42V]6jQUzodHh6R0WX6>41
+Z7 OV;C;2020.1;71
+33
+Z8 !s110 1706741539
+!i10b 1
+Z9 !s108 1706741539.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:\Users\LENOVO\Desktop\Nabil\MIPS_VHDL\CACHE_RAM\src\CACHE_RAM.vhd|
+Z11 !s107 C:\Users\LENOVO\Desktop\Nabil\MIPS_VHDL\CACHE_RAM\src\CACHE_RAM.vhd|
+!i113 1
+Z12 o-work work -2008 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+DEx4 work 9 cache_ram 0 22 KWOhKzlfdARkSWN_b>0fL3
+!i122 17
+l23
+L14 25
+V8Zb_Q^Jc58oKdb5]3ZNgP0
+!s100 7QR2jla1UhI>FIHiSjB8o1
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecache_ram_tb
+Z14 w1706743294
+R1
+R2
+R3
+!i122 22
+R4
+Z15 8C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/CACHE_RAM/tb/CACHE_RAM_TB.vhd
+Z16 FC:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/CACHE_RAM/tb/CACHE_RAM_TB.vhd
+l0
+L5 1
+Vc[;IcZ8KE3jOo_WYm?Rj_2
+!s100 AY=>8HU6goB@SmN_@c2dG3
+R7
+33
+Z17 !s110 1706743299
+!i10b 1
+Z18 !s108 1706743299.000000
+Z19 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/CACHE_RAM/tb/CACHE_RAM_TB.vhd|
+Z20 !s107 C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/CACHE_RAM/tb/CACHE_RAM_TB.vhd|
+!i113 1
+R12
+R13
+Atb_arch
+R1
+R2
+R3
+DEx4 work 12 cache_ram_tb 0 22 c[;IcZ8KE3jOo_WYm?Rj_2
+!i122 22
+l24
+L8 68
+V<o<Q_5FTn]LWWR8HYeG8]3
+!s100 o9A0<k[ePRgLNFk?[dzR01
+R7
+33
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Edirect_map_array
+Z21 w1706805748
+R1
+R2
+R3
+!i122 53
+R4
+Z22 8C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/DIRECT_MAP_ARRAY/src/DIRECT_MAP_ARRAY.vhd
+Z23 FC:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/DIRECT_MAP_ARRAY/src/DIRECT_MAP_ARRAY.vhd
+l0
+L5 1
+V=Vnc3Qd2SJ=KVAOanlULS1
+!s100 ;JB4K;JH<G7NMD=`hg5=E0
+R7
+32
+Z24 !s110 1706805814
+!i10b 1
+Z25 !s108 1706805814.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/DIRECT_MAP_ARRAY/src/DIRECT_MAP_ARRAY.vhd|
+Z27 !s107 C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/DIRECT_MAP_ARRAY/src/DIRECT_MAP_ARRAY.vhd|
+!i113 1
+Z28 o-work work -2002 -explicit
+R13
+Artl
+R1
+R2
+R3
+DEx4 work 16 direct_map_array 0 22 =Vnc3Qd2SJ=KVAOanlULS1
+!i122 53
+l21
+L15 28
+Vmb=2=iKQC`N]WOXUOjgP<0
+!s100 VNHSHFJg<1iJFBh7meLi@1
+R7
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R28
+R13
+Edirect_map_array_tb
+Z29 w1702336854
+R1
+R2
+R3
+!i122 54
+R4
+Z30 8C:/Users/LENOVO/Desktop/Nabil/cach_array/DIRECT_MAP_ARRAY_tb.vhd
+Z31 FC:/Users/LENOVO/Desktop/Nabil/cach_array/DIRECT_MAP_ARRAY_tb.vhd
+l0
+L5 1
+VO?BPSA=QY2Ymj;=8<?]PQ1
+!s100 HGFVT51nY_bOlaPDRJOH12
+R7
+32
+Z32 !s110 1707157214
+!i10b 1
+Z33 !s108 1707157214.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/LENOVO/Desktop/Nabil/cach_array/DIRECT_MAP_ARRAY_tb.vhd|
+Z35 !s107 C:/Users/LENOVO/Desktop/Nabil/cach_array/DIRECT_MAP_ARRAY_tb.vhd|
+!i113 1
+R28
+R13
+Atb_arch
+R1
+R2
+R3
+Z36 DEx4 work 19 direct_map_array_tb 0 22 O?BPSA=QY2Ymj;=8<?]PQ1
+!i122 54
+l22
+Z37 L8 129
+Z38 VHTZ=aAX]mWXL[7E4b?5zS2
+Z39 !s100 oMkU7Pgl<z4NHA3[gEhGh3
+R7
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R28
+R13
+Eip_cach_ram
+Z40 w1706790272
+R2
+R3
+!i122 45
+R4
+Z41 8C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/IP_CACH_RAM.vhd
+Z42 FC:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/IP_CACH_RAM.vhd
+l0
+L4 1
+VLo_mB<;De=dCdl3I[L0lD2
+!s100 [Kk1RMa@M<`GLSk=53_KG2
+R7
+33
+Z43 !s110 1706797722
+!i10b 1
+Z44 !s108 1706797721.000000
+Z45 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/IP_CACH_RAM.vhd|
+Z46 !s107 C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/IP_CACH_RAM.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 11 ip_cach_ram 0 22 Lo_mB<;De=dCdl3I[L0lD2
+!i122 45
+l20
+L12 14
+VU3Pgzele9a0hfH1`D@el40
+!s100 HAeKGgCT?8DEDTNS@eBPM0
+R7
+33
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R12
+R13
+El1_inst_cach
+Z47 w1706795789
+R1
+R2
+R3
+!i122 44
+R4
+Z48 8C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/src/L1_INST_CACH.vhd
+Z49 FC:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/src/L1_INST_CACH.vhd
+l0
+L6 1
+V3L:Wlk0l=4HTG@AXAzcQ[1
+!s100 :mHP_Gi9zY?e>>0?OiChe0
+R7
+33
+Z50 !s110 1706797721
+!i10b 1
+R44
+Z51 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/src/L1_INST_CACH.vhd|
+Z52 !s107 C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/src/L1_INST_CACH.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+Z53 DEx4 work 12 l1_inst_cach 0 22 3L:Wlk0l=4HTG@AXAzcQ[1
+!i122 44
+l52
+L13 63
+VdI=<4MWGda?6eMNAT4d`Q0
+!s100 ^7eG<W<]S[WMXF8X^B=k90
+R7
+33
+R50
+!i10b 1
+R44
+R51
+R52
+!i113 1
+R12
+R13
+El1_inst_cach_tb
+Z54 w1706797833
+R1
+R2
+R3
+!i122 49
+R4
+Z55 8C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/L1_INST_CACH_tb.vhd
+Z56 FC:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/L1_INST_CACH_tb.vhd
+l0
+L5 1
+V]kUh21Z0lfT=ln4F[G`NT1
+!s100 fJZFEX50?Ad25d8d;Dk]G2
+R7
+33
+Z57 !s110 1706797848
+!i10b 1
+Z58 !s108 1706797848.000000
+Z59 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/L1_INST_CACH_tb.vhd|
+Z60 !s107 C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/L1_INST_CACH_tb.vhd|
+!i113 1
+R12
+R13
+Atb_arch
+R53
+R1
+R2
+R3
+DEx4 work 15 l1_inst_cach_tb 0 22 ]kUh21Z0lfT=ln4F[G`NT1
+!i122 49
+l16
+L8 54
+VS53eiTUiiXCW6LJ[i@Eid0
+!s100 1hLBm<TP<J_KI^aH;4Aje3
+R7
+33
+R57
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R12
+R13
+Emux21
+Z61 w1706797218
+R2
+R3
+!i122 48
+R4
+Z62 8C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/MUX21/src/MUX21.vhd
+Z63 FC:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/MUX21/src/MUX21.vhd
+l0
+L3 1
+VnWD^9T<J1FB:3U_PAkLF03
+!s100 <NT]f;>COHIO[II?h6BR`3
+R7
+33
+R43
+!i10b 1
+Z64 !s108 1706797722.000000
+Z65 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/MUX21/src/MUX21.vhd|
+Z66 !s107 C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/MUX21/src/MUX21.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 5 mux21 0 22 nWD^9T<J1FB:3U_PAkLF03
+!i122 48
+l11
+L10 7
+V8d`Gz<RXZ1`Fz<CaBeeH=3
+!s100 OSo[gd]Qgab@;aoLJ=O4d1
+R7
+33
+R43
+!i10b 1
+R64
+R65
+R66
+!i113 1
+R12
+R13
+Eram_ip
+Z67 w1706788186
+Z68 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+R2
+R3
+!i122 46
+R4
+Z69 8C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/ram_ip.vhd
+Z70 FC:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/ram_ip.vhd
+l0
+L43 1
+V5XfOU?bIM;XM4_<8H:Wz`2
+!s100 2JGf^zPjz=P>5DK_2ZXAW3
+R7
+33
+R43
+!i10b 1
+R64
+Z71 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/ram_ip.vhd|
+Z72 !s107 C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/IP_CACH_RAM/ram_ip.vhd|
+!i113 1
+R12
+R13
+Asyn
+R68
+R2
+R3
+DEx4 work 6 ram_ip 0 22 5XfOU?bIM;XM4_<8H:Wz`2
+!i122 46
+l59
+L55 36
+V6bHYNDEQ0JD^_>jSMFDb:3
+!s100 [THJ>X8dD]D^ZKknk:hNH2
+R7
+33
+R43
+!i10b 1
+R64
+R71
+R72
+!i113 1
+R12
+R13

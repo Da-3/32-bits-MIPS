@@ -1,0 +1,57 @@
+-- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=32;
+
+ADDRESS_RADIX=BIN;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	000000  :   00000064;
+	000001  :   00000065;
+	000010  :   00000066;
+	000011  :   00000067;
+	000100  :   00000068;
+	000101  :   00000069;
+	000110  :   0000006A;
+	000111  :   0000006B;
+	001000  :   0000006C;
+	001001  :   0000006D;
+	001010  :   0000006E;
+	001011  :   0000006F;
+	001100  :   00000070;
+	001101  :   00000071;
+	001110  :   00000072;
+	001111  :   00000073;
+	010000  :   00000074;
+	010001  :   00000075;
+	010010  :   00000076;
+	010011  :   00000077;
+	010100  :   00000078;
+	010101  :   00000079;
+	010110  :   0000007A;
+	010111  :   0000007B;
+	011000  :   0000007C;
+	011001  :   0000007D;
+	011010  :   0000007E;
+	011011  :   0000007F;
+	011100  :   00000080;
+	011101  :   00000081;
+	011110  :   00000082;
+	011111  :   00000083;
+END;

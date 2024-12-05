@@ -1,0 +1,103 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/MUX31/simulation/qsim
+Emux31
+Z1 w1700160584
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 3HQPc5MVbmOPN?>a5EBYj2
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 jZ]H46BQLgIP5mfRTO`3B1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ^Ch;U@;bMk1;>A2B<UV`k2
+!i122 2
+R0
+Z9 8MUX31.vho
+Z10 FMUX31.vho
+l0
+L37 1
+VnDnSW?:RclB^e;d^HXFeM3
+!s100 @zKZ965ZXLP=TgnNk@MO@0
+Z11 OV;C;2020.1;71
+32
+Z12 !s110 1700160585
+!i10b 1
+Z13 !s108 1700160585.000000
+Z14 !s90 -work|work|MUX31.vho|
+Z15 !s107 MUX31.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 5 mux31 0 22 nDnSW?:RclB^e;d^HXFeM3
+!i122 2
+l425
+L180 2498
+VNj6=cCRQao:9N0ZmhF=RU2
+!s100 d;H6VNkRBZ5E:GAZIUNM32
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Emux31_vhd_vec_tst
+Z18 w1700160583
+R6
+R7
+!i122 3
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L32 1
+VDEk^DSOcL4K@NoGZG=[Cd1
+!s100 Cg:<L9_<Di8@L_RAAI1j_1
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Amux31_arch
+R6
+R7
+Z23 DEx4 work 17 mux31_vhd_vec_tst 0 22 DEk^DSOcL4K@NoGZG=[Cd1
+!i122 3
+l51
+Z24 L34 626
+Z25 Vok]h6niNCE0zlz[KI^3:n0
+Z26 !s100 dXLGiT=QG`E61M^h5J[if1
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17

@@ -1,0 +1,1082 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/intelfpga_lite/20.1/modelsim_ase/win32aloem/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off L1_INST_CACH -c L1_INST_CACH --vector_source="C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/Waveform.vwf" --testbench_file="C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/simulation/qsim/Waveform.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Thu Feb 01 16:32:10 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off L1_INST_CACH -c L1_INST_CACH --vector_source=C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/Waveform.vwf --testbench_file=C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/simulation/qsim/Waveform.vwf.vht
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+ap|data_out[28]" in design
+
+CACH_RAM:cach_ram|ram_ip:U1|data[14]" in design
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/simulation/qsim/" L1_INST_CACH -c L1_INST_CACH
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Thu Feb 01 16:32:11 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/simulation/qsim/ L1_INST_CACH -c L1_INST_CACH
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file L1_INST_CACH.vho in folder "C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4724 megabytes
+    Info: Processing ended: Thu Feb 01 16:32:12 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/simulation/qsim/L1_INST_CACH.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do L1_INST_CACH.do
+
+Reading pref.tcl
+
+
+# 2020.1
+
+# do L1_INST_CACH.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:32:12 on Feb 01,2024
+# vcom -work work L1_INST_CACH.vho 
+
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity L1_INST_CACH
+# -- Compiling architecture structure of L1_INST_CACH
+# End time: 16:32:12 on Feb 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:32:12 on Feb 01,2024
+# vcom -work work Waveform.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity L1_INST_CACH_vhd_vec_tst
+# -- Compiling architecture L1_INST_CACH_arch of L1_INST_CACH_vhd_vec_tst
+
+# End time: 16:32:12 on Feb 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.L1_INST_CACH_vhd_vec_tst 
+# Start time: 16:32:12 on Feb 01,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.l1_inst_cach_vhd_vec_tst(l1_inst_cach_arch)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.l1_inst_cach(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# after#32
+
+# End time: 16:32:13 on Feb 01,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/Waveform.vwf...
+
+Reading C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/simulation/qsim/L1_INST_CACH.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: inst_cach[31] - signal not found in VCD.
+
+Warning: inst_cach[30] - signal not found in VCD.
+
+Warning: inst_cach[29] - signal not found in VCD.
+
+Warning: inst_cach[28] - signal not found in VCD.
+
+Warning: inst_cach[27] - signal not found in VCD.
+
+Warning: inst_cach[26] - signal not found in VCD.
+
+Warning: inst_cach[25] - signal not found in VCD.
+
+Warning: inst_cach[24] - signal not found in VCD.
+
+Warning: inst_cach[23] - signal not found in VCD.
+
+Warning: inst_cach[22] - signal not found in VCD.
+
+Warning: inst_cach[21] - signal not found in VCD.
+
+Warning: inst_cach[20] - signal not found in VCD.
+
+Warning: inst_cach[19] - signal not found in VCD.
+
+Warning: inst_cach[18] - signal not found in VCD.
+
+Warning: inst_cach[17] - signal not found in VCD.
+
+Warning: inst_cach[16] - signal not found in VCD.
+
+Warning: inst_cach[15] - signal not found in VCD.
+
+Warning: inst_cach[14] - signal not found in VCD.
+
+Warning: inst_cach[13] - signal not found in VCD.
+
+Warning: inst_cach[12] - signal not found in VCD.
+
+Warning: inst_cach[11] - signal not found in VCD.
+
+Warning: inst_cach[10] - signal not found in VCD.
+
+Warning: inst_cach[9] - signal not found in VCD.
+
+Warning: inst_cach[8] - signal not found in VCD.
+
+Warning: inst_cach[7] - signal not found in VCD.
+
+Warning: inst_cach[6] - signal not found in VCD.
+
+Warning: inst_cach[5] - signal not found in VCD.
+
+Warning: inst_cach[4] - signal not found in VCD.
+
+Warning: inst_cach[3] - signal not found in VCD.
+
+Warning: inst_cach[2] - signal not found in VCD.
+
+Warning: inst_cach[1] - signal not found in VCD.
+
+Warning: inst_cach[0] - signal not found in VCD.
+
+Warning: inst_ram[31] - signal not found in VCD.
+
+Warning: inst_ram[30] - signal not found in VCD.
+
+Warning: inst_ram[29] - signal not found in VCD.
+
+Warning: inst_ram[28] - signal not found in VCD.
+
+Warning: inst_ram[27] - signal not found in VCD.
+
+Warning: inst_ram[26] - signal not found in VCD.
+
+Warning: inst_ram[25] - signal not found in VCD.
+
+Warning: inst_ram[24] - signal not found in VCD.
+
+Warning: inst_ram[23] - signal not found in VCD.
+
+Warning: inst_ram[22] - signal not found in VCD.
+
+Warning: inst_ram[21] - signal not found in VCD.
+
+Warning: inst_ram[20] - signal not found in VCD.
+
+Warning: inst_ram[19] - signal not found in VCD.
+
+Warning: inst_ram[18] - signal not found in VCD.
+
+Warning: inst_ram[17] - signal not found in VCD.
+
+Warning: inst_ram[16] - signal not found in VCD.
+
+Warning: inst_ram[15] - signal not found in VCD.
+
+Warning: inst_ram[14] - signal not found in VCD.
+
+Warning: inst_ram[13] - signal not found in VCD.
+
+Warning: inst_ram[12] - signal not found in VCD.
+
+Warning: inst_ram[11] - signal not found in VCD.
+
+Warning: inst_ram[10] - signal not found in VCD.
+
+Warning: inst_ram[9] - signal not found in VCD.
+
+Warning: inst_ram[8] - signal not found in VCD.
+
+Warning: inst_ram[7] - signal not found in VCD.
+
+Warning: inst_ram[6] - signal not found in VCD.
+
+Warning: inst_ram[5] - signal not found in VCD.
+
+Warning: inst_ram[4] - signal not found in VCD.
+
+Warning: inst_ram[3] - signal not found in VCD.
+
+Warning: inst_ram[2] - signal not found in VCD.
+
+Warning: inst_ram[1] - signal not found in VCD.
+
+Warning: inst_ram[0] - signal not found in VCD.
+
+Warning: inst_sig[31] - signal not found in VCD.
+
+Warning: inst_sig[30] - signal not found in VCD.
+
+Warning: inst_sig[29] - signal not found in VCD.
+
+Warning: inst_sig[28] - signal not found in VCD.
+
+Warning: inst_sig[27] - signal not found in VCD.
+
+Warning: inst_sig[26] - signal not found in VCD.
+
+Warning: inst_sig[25] - signal not found in VCD.
+
+Warning: inst_sig[24] - signal not found in VCD.
+
+Warning: inst_sig[23] - signal not found in VCD.
+
+Warning: inst_sig[22] - signal not found in VCD.
+
+Warning: inst_sig[21] - signal not found in VCD.
+
+Warning: inst_sig[20] - signal not found in VCD.
+
+Warning: inst_sig[19] - signal not found in VCD.
+
+Warning: inst_sig[18] - signal not found in VCD.
+
+Warning: inst_sig[17] - signal not found in VCD.
+
+Warning: inst_sig[16] - signal not found in VCD.
+
+Warning: inst_sig[15] - signal not found in VCD.
+
+Warning: inst_sig[14] - signal not found in VCD.
+
+Warning: inst_sig[13] - signal not found in VCD.
+
+Warning: inst_sig[12] - signal not found in VCD.
+
+Warning: inst_sig[11] - signal not found in VCD.
+
+Warning: inst_sig[10] - signal not found in VCD.
+
+Warning: inst_sig[9] - signal not found in VCD.
+
+Warning: inst_sig[8] - signal not found in VCD.
+
+Warning: inst_sig[7] - signal not found in VCD.
+
+Warning: inst_sig[6] - signal not found in VCD.
+
+Warning: inst_sig[5] - signal not found in VCD.
+
+Warning: inst_sig[4] - signal not found in VCD.
+
+Warning: inst_sig[3] - signal not found in VCD.
+
+Warning: inst_sig[2] - signal not found in VCD.
+
+Warning: inst_sig[1] - signal not found in VCD.
+
+Warning: inst_sig[0] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|address[4] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|address[3] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|address[2] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|address[1] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|address[0] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|clock - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[31] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[30] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[29] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[28] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[27] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[26] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[25] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[24] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[23] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[22] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[21] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[20] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[19] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[18] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[17] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[16] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[15] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[14] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[13] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[12] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[11] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[10] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[9] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[8] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[7] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[6] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[5] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[4] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[3] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[2] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[1] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|data[0] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[31] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[30] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[29] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[28] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[27] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[26] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[25] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[24] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[23] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[22] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[21] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[20] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[19] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[18] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[17] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[16] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[15] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[14] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[13] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[12] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[11] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[10] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[9] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[8] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[7] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[6] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[5] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[4] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[3] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[2] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[1] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|q[0] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|wren - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[31] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[30] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[29] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[28] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[27] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[26] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[25] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[24] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[23] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[22] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[21] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[20] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[19] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[18] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[17] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[16] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[15] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[14] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[13] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[12] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[11] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[10] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[9] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[8] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[7] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[6] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[5] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[4] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[3] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[2] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[1] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_in[0] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[31] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[30] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[29] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[28] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[27] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[26] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[25] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[24] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[23] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[22] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[21] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[20] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[19] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[18] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[17] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[16] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[15] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[14] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[13] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[12] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[11] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[10] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[9] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[8] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[7] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[6] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[5] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[4] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[3] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[2] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[1] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|data_out[0] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|hit - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[31] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[30] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[29] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[28] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[27] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[26] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[25] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[24] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[23] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[22] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[21] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[20] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[19] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[18] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[17] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[16] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[15] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[14] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[13] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[12] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[11] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[10] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[9] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[8] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[7] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[6] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[5] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[4] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[3] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[2] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[1] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|pc[0] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|set_int[3] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|set_int[2] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|set_int[1] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|set_int[0] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[27] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[26] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[25] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[24] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[23] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[22] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[21] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[20] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[19] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[18] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[17] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[16] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[15] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[14] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[13] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[12] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[11] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[10] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[9] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[8] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[7] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[6] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[5] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[4] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[3] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[2] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[1] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|tag_out[0] - signal not found in VCD.
+
+Warning: DIRECT_MAP_ARRAY:direct_map|valid_out - signal not found in VCD.
+
+Warning: MUX21:mux|A[31] - signal not found in VCD.
+
+Warning: MUX21:mux|A[30] - signal not found in VCD.
+
+Warning: MUX21:mux|A[29] - signal not found in VCD.
+
+Warning: MUX21:mux|A[28] - signal not found in VCD.
+
+Warning: MUX21:mux|A[27] - signal not found in VCD.
+
+Warning: MUX21:mux|A[26] - signal not found in VCD.
+
+Warning: MUX21:mux|A[25] - signal not found in VCD.
+
+Warning: MUX21:mux|A[24] - signal not found in VCD.
+
+Warning: MUX21:mux|A[23] - signal not found in VCD.
+
+Warning: MUX21:mux|A[22] - signal not found in VCD.
+
+Warning: MUX21:mux|A[21] - signal not found in VCD.
+
+Warning: MUX21:mux|A[20] - signal not found in VCD.
+
+Warning: MUX21:mux|A[19] - signal not found in VCD.
+
+Warning: MUX21:mux|A[18] - signal not found in VCD.
+
+Warning: MUX21:mux|A[17] - signal not found in VCD.
+
+Warning: MUX21:mux|A[16] - signal not found in VCD.
+
+Warning: MUX21:mux|A[15] - signal not found in VCD.
+
+Warning: MUX21:mux|A[14] - signal not found in VCD.
+
+Warning: MUX21:mux|A[13] - signal not found in VCD.
+
+Warning: MUX21:mux|A[12] - signal not found in VCD.
+
+Warning: MUX21:mux|A[11] - signal not found in VCD.
+
+Warning: MUX21:mux|A[10] - signal not found in VCD.
+
+Warning: MUX21:mux|A[9] - signal not found in VCD.
+
+Warning: MUX21:mux|A[8] - signal not found in VCD.
+
+Warning: MUX21:mux|A[7] - signal not found in VCD.
+
+Warning: MUX21:mux|A[6] - signal not found in VCD.
+
+Warning: MUX21:mux|A[5] - signal not found in VCD.
+
+Warning: MUX21:mux|A[4] - signal not found in VCD.
+
+Warning: MUX21:mux|A[3] - signal not found in VCD.
+
+Warning: MUX21:mux|A[2] - signal not found in VCD.
+
+Warning: MUX21:mux|A[1] - signal not found in VCD.
+
+Warning: MUX21:mux|A[0] - signal not found in VCD.
+
+Warning: MUX21:mux|B[31] - signal not found in VCD.
+
+Warning: MUX21:mux|B[30] - signal not found in VCD.
+
+Warning: MUX21:mux|B[29] - signal not found in VCD.
+
+Warning: MUX21:mux|B[28] - signal not found in VCD.
+
+Warning: MUX21:mux|B[27] - signal not found in VCD.
+
+Warning: MUX21:mux|B[26] - signal not found in VCD.
+
+Warning: MUX21:mux|B[25] - signal not found in VCD.
+
+Warning: MUX21:mux|B[24] - signal not found in VCD.
+
+Warning: MUX21:mux|B[23] - signal not found in VCD.
+
+Warning: MUX21:mux|B[22] - signal not found in VCD.
+
+Warning: MUX21:mux|B[21] - signal not found in VCD.
+
+Warning: MUX21:mux|B[20] - signal not found in VCD.
+
+Warning: MUX21:mux|B[19] - signal not found in VCD.
+
+Warning: MUX21:mux|B[18] - signal not found in VCD.
+
+Warning: MUX21:mux|B[17] - signal not found in VCD.
+
+Warning: MUX21:mux|B[16] - signal not found in VCD.
+
+Warning: MUX21:mux|B[15] - signal not found in VCD.
+
+Warning: MUX21:mux|B[14] - signal not found in VCD.
+
+Warning: MUX21:mux|B[13] - signal not found in VCD.
+
+Warning: MUX21:mux|B[12] - signal not found in VCD.
+
+Warning: MUX21:mux|B[11] - signal not found in VCD.
+
+Warning: MUX21:mux|B[10] - signal not found in VCD.
+
+Warning: MUX21:mux|B[9] - signal not found in VCD.
+
+Warning: MUX21:mux|B[8] - signal not found in VCD.
+
+Warning: MUX21:mux|B[7] - signal not found in VCD.
+
+Warning: MUX21:mux|B[6] - signal not found in VCD.
+
+Warning: MUX21:mux|B[5] - signal not found in VCD.
+
+Warning: MUX21:mux|B[4] - signal not found in VCD.
+
+Warning: MUX21:mux|B[3] - signal not found in VCD.
+
+Warning: MUX21:mux|B[2] - signal not found in VCD.
+
+Warning: MUX21:mux|B[1] - signal not found in VCD.
+
+Warning: MUX21:mux|B[0] - signal not found in VCD.
+
+Warning: MUX21:mux|s[31] - signal not found in VCD.
+
+Warning: MUX21:mux|s[30] - signal not found in VCD.
+
+Warning: MUX21:mux|s[29] - signal not found in VCD.
+
+Warning: MUX21:mux|s[28] - signal not found in VCD.
+
+Warning: MUX21:mux|s[27] - signal not found in VCD.
+
+Warning: MUX21:mux|s[26] - signal not found in VCD.
+
+Warning: MUX21:mux|s[25] - signal not found in VCD.
+
+Warning: MUX21:mux|s[24] - signal not found in VCD.
+
+Warning: MUX21:mux|s[23] - signal not found in VCD.
+
+Warning: MUX21:mux|s[22] - signal not found in VCD.
+
+Warning: MUX21:mux|s[21] - signal not found in VCD.
+
+Warning: MUX21:mux|s[20] - signal not found in VCD.
+
+Warning: MUX21:mux|s[19] - signal not found in VCD.
+
+Warning: MUX21:mux|s[18] - signal not found in VCD.
+
+Warning: MUX21:mux|s[17] - signal not found in VCD.
+
+Warning: MUX21:mux|s[16] - signal not found in VCD.
+
+Warning: MUX21:mux|s[15] - signal not found in VCD.
+
+Warning: MUX21:mux|s[14] - signal not found in VCD.
+
+Warning: MUX21:mux|s[13] - signal not found in VCD.
+
+Warning: MUX21:mux|s[12] - signal not found in VCD.
+
+Warning: MUX21:mux|s[11] - signal not found in VCD.
+
+Warning: MUX21:mux|s[10] - signal not found in VCD.
+
+Warning: MUX21:mux|s[9] - signal not found in VCD.
+
+Warning: MUX21:mux|s[8] - signal not found in VCD.
+
+Warning: MUX21:mux|s[7] - signal not found in VCD.
+
+Warning: MUX21:mux|s[6] - signal not found in VCD.
+
+Warning: MUX21:mux|s[5] - signal not found in VCD.
+
+Warning: MUX21:mux|s[4] - signal not found in VCD.
+
+Warning: MUX21:mux|s[3] - signal not found in VCD.
+
+Warning: MUX21:mux|s[2] - signal not found in VCD.
+
+Warning: MUX21:mux|s[1] - signal not found in VCD.
+
+Warning: MUX21:mux|s[0] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|address[4] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|address[3] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|address[2] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|address[1] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|address[0] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|clock - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[31] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[30] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[29] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[28] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[27] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[26] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[25] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[24] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[23] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[22] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[21] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[20] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[19] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[18] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[17] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[16] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[15] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[14] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[13] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[12] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[11] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[10] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[9] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[8] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[7] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[6] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[5] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[4] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[3] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[2] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[1] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|data[0] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[31] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[30] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[29] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[28] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[27] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[26] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[25] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[24] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[23] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[22] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[21] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[20] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[19] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[18] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[17] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[16] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[15] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[14] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[13] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[12] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[11] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[10] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[9] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[8] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[7] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[6] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[5] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[4] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[3] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[2] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[1] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|q[0] - signal not found in VCD.
+
+Warning: IP_CACH_RAM:cach_ram|ram_ip:U1|wren - signal not found in VCD.
+
+Writing the resulting VWF to C:/Users/LENOVO/Desktop/Nabil/MIPS_VHDL/L1_INST_CACH/simulation/qsim/L1_INST_CACH_20240201163213.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

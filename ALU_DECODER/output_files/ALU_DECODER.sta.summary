@@ -1,0 +1,53 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Recovery 'ALUOP[0]'
+Slack : -2.465
+TNS   : -2.465
+
+Type  : Slow 1100mV 85C Model Removal 'ALUOP[0]'
+Slack : 1.033
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ALUOP[0]'
+Slack : 0.374
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'ALUOP[0]'
+Slack : -2.444
+TNS   : -2.444
+
+Type  : Slow 1100mV 0C Model Removal 'ALUOP[0]'
+Slack : 0.988
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ALUOP[0]'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'ALUOP[0]'
+Slack : -1.679
+TNS   : -1.679
+
+Type  : Fast 1100mV 85C Model Removal 'ALUOP[0]'
+Slack : 0.516
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ALUOP[0]'
+Slack : 0.099
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'ALUOP[0]'
+Slack : -1.544
+TNS   : -1.544
+
+Type  : Fast 1100mV 0C Model Removal 'ALUOP[0]'
+Slack : 0.470
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ALUOP[0]'
+Slack : 0.078
+TNS   : 0.000
+
+------------------------------------------------------------
